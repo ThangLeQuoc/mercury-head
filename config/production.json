@@ -11,7 +11,23 @@
         "mlab-host": "ds135790.mlab.com:35790/frogcoffeedb",
         "mlab-auth": {
             "user": "root",
-            "pass": "root"
+            "pass": "root",
+            "autoReconnect": true,
+            "server": {
+                "autoReconnect": true
+            }
         }
+    },
+    "notification": {
+        "type": [{
+            "name": "mentioned"
+        }, {
+            "name": "tagged"
+        }]
+    },
+    "articlesScoreUpdateInterval": 1800000,
+    "auth0ProfileImage": {
+        "path": "https://cdn.auth0.com/avatars/",
+        "extension-type": ".png"
     }
 }
